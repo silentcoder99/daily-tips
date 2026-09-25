@@ -1,0 +1,13 @@
+# One tip per line. Blank lines and lines starting with # are ignored,
+# so use comments to group tips however you like.
+
+# Git
+Use `git switch -` to jump back to the previous branch.
+`git commit --fixup <sha>` + `git rebase -i --autosquash` keeps history tidy.
+
+# Shell
+Ctrl+R searches your shell history; press it again to cycle matches.
+`!!` repeats the last command — handy as `sudo !!`.
+
+# Habits
+Write down the one thing that would make today a win before opening email.
