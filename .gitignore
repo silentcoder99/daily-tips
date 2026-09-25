@@ -1,0 +1,6 @@
+# dotenvx private keys — never commit
+.env.keys
+.env.vault
+__pycache__/
+*.pyc
+.venv/

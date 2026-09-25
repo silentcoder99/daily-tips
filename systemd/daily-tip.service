@@ -1,0 +1,13 @@
+[Unit]
+Description=Publish a random daily tip to ntfy
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+# Edit these paths to match your machine (`which dotenvx python3`).
+WorkingDirectory=%h/daily-tips
+# Holds DOTENV_PRIVATE_KEY=...; alternatively keep .env.keys beside .env
+# and delete this line.
+EnvironmentFile=-%h/.config/daily-tip/key.env
+ExecStart=/usr/local/bin/dotenvx run -f .env -- /usr/bin/python3 daily_tip.py
